@@ -18,6 +18,13 @@ The Spring Boot backend handles:
 - Persistent storage of player data using Spring Data JPA with H2 database
 - Ensuring scores are saved and retrieved for a dynamic, competitive leaderboard experience
 
+# Run Online
+To run this program online you can visit the link:
+```
+https://wordledeploy.onrender.com
+```
+_Please note that there may be a minute wait time when running the program online due to the server's hibernation._
+
 # Run Locally with Docker
 
 > Make sure you have [Docker installed](https://docs.docker.com/get-docker/).
