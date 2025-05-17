@@ -49,9 +49,12 @@ function guess() {
   }
 
   const row = document.createElement("div");
+  row.classList.add("row");
+
   colors.forEach((color, i) => {
     const box = document.createElement("div");
     box.textContent = guesses[i].toUpperCase();
+    box.classList.add("box");
     box.style.backgroundColor = color;
     row.appendChild(box);
   });

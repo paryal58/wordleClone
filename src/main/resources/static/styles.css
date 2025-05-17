@@ -100,6 +100,7 @@ button:hover:not(:disabled) {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition-duration: 2s;
 }
 
 #guesses>div {
@@ -149,4 +150,21 @@ button:hover:not(:disabled) {
   border: none;
   margin-bottom: 15px;
   text-transform: none;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+  animation: slideInLeft 0.5s ease-out;
 }
